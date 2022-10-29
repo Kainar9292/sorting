@@ -1,0 +1,78 @@
+{
+    "sourceFile": "src/components/Users.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1667034461471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1667034732058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   </button>\n \n   <br />\n   <br />\n-  <div v-for=\"item in state.users\">\n+  <div class=\"users\" v-for=\"item in state.users\">\n     <strong>{{ item.first_name }} {{ item.last_name }}</strong> &nbsp;\n     <a href=\"mailto:{{item.email}}\">email</a> &nbsp;\n     <strong>{{ item.gender }}</strong>\n     <br />\n"
+                },
+                {
+                    "date": 1667034748545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,15 +6,18 @@\n   </button>\n \n   <br />\n   <br />\n-  <div class=\"users\" v-for=\"item in state.users\">\n+  <div class=\"users\">\n+  <div v-for=\"item in state.users\">\n     <strong>{{ item.first_name }} {{ item.last_name }}</strong> &nbsp;\n     <a href=\"mailto:{{item.email}}\">email</a> &nbsp;\n     <strong>{{ item.gender }}</strong>\n     <br />\n     <br />\n   </div>\n+  </div>\n+\n </template>\n \n <script setup>\n import { reactive } from 'vue';\n"
+                },
+                {
+                    "date": 1667034754061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,17 +7,16 @@\n \n   <br />\n   <br />\n   <div class=\"users\">\n-  <div v-for=\"item in state.users\">\n-    <strong>{{ item.first_name }} {{ item.last_name }}</strong> &nbsp;\n-    <a href=\"mailto:{{item.email}}\">email</a> &nbsp;\n-    <strong>{{ item.gender }}</strong>\n-    <br />\n-    <br />\n+    <div v-for=\"item in state.users\">\n+      <strong>{{ item.first_name }} {{ item.last_name }}</strong> &nbsp;\n+      <a href=\"mailto:{{item.email}}\">email</a> &nbsp;\n+      <strong>{{ item.gender }}</strong>\n+      <br />\n+      <br />\n+    </div>\n   </div>\n-  </div>\n-\n </template>\n \n <script setup>\n import { reactive } from 'vue';\n"
+                },
+                {
+                    "date": 1667034761055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n     <div v-for=\"item in state.users\">\n       <strong>{{ item.first_name }} {{ item.last_name }}</strong> &nbsp;\n       <a href=\"mailto:{{item.email}}\">email</a> &nbsp;\n       <strong>{{ item.gender }}</strong>\n-      <br />\n-      <br />\n+      <!-- <br />\n+      <br /> -->\n     </div>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1667034776080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   <br />\n   <div class=\"users\">\n     <div v-for=\"item in state.users\">\n       <strong>{{ item.first_name }} {{ item.last_name }}</strong> &nbsp;\n-      <a href=\"mailto:{{item.email}}\">email</a> &nbsp;\n+      <a href=\"mailto:{{item.email}}\">email</a> \n       <strong>{{ item.gender }}</strong>\n       <!-- <br />\n       <br /> -->\n     </div>\n"
+                },
+                {
+                    "date": 1667034790809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n   <br />\n   <br />\n   <div class=\"users\">\n     <div v-for=\"item in state.users\">\n-      <strong>{{ item.first_name }} {{ item.last_name }}</strong> &nbsp;\n+      <div>{{ item.first_name }} {{ item.last_name }}</div>\n       <a href=\"mailto:{{item.email}}\">email</a> \n-      <strong>{{ item.gender }}</strong>\n+      <div>{{ item.gender }}</div>\n       <!-- <br />\n       <br /> -->\n     </div>\n   </div>\n"
+                },
+                {
+                    "date": 1667034899081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n   <br />\n   <br />\n   <div class=\"users\">\n-    <div v-for=\"item in state.users\">\n+    <div class=\"users_item\" v-for=\"item in state.users\">\n       <div>{{ item.first_name }} {{ item.last_name }}</div>\n       <a href=\"mailto:{{item.email}}\">email</a> \n       <div>{{ item.gender }}</div>\n       <!-- <br />\n"
+                },
+                {
+                    "date": 1667034956186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   <br />\n   <br />\n   <div class=\"users\">\n     <div class=\"users_item\" v-for=\"item in state.users\">\n-      <div>{{ item.first_name }} {{ item.last_name }}</div>\n+      <div class=\"name\">{{ item.first_name }} {{ item.last_name }}</div>\n       <a href=\"mailto:{{item.email}}\">email</a> \n       <div>{{ item.gender }}</div>\n       <!-- <br />\n       <br /> -->\n"
+                },
+                {
+                    "date": 1667034981139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   <br />\n   <br />\n   <div class=\"users\">\n     <div class=\"users_item\" v-for=\"item in state.users\">\n-      <div class=\"name\">{{ item.first_name }} {{ item.last_name }}</div>\n+      <div class=\"users_item-name\">{{ item.first_name }} {{ item.last_name }}</div>\n       <a href=\"mailto:{{item.email}}\">email</a> \n       <div>{{ item.gender }}</div>\n       <!-- <br />\n       <br /> -->\n"
+                },
+                {
+                    "date": 1667035020232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   <br />\n   <div class=\"users\">\n     <div class=\"users_item\" v-for=\"item in state.users\">\n       <div class=\"users_item-name\">{{ item.first_name }} {{ item.last_name }}</div>\n-      <a href=\"mailto:{{item.email}}\">email</a> \n+      <a class=\"users_item-email\" href=\"mailto:{{item.email}}\">email</a> \n       <div>{{ item.gender }}</div>\n       <!-- <br />\n       <br /> -->\n     </div>\n"
+                },
+                {
+                    "date": 1667035258940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,14 @@\n <template>\n+  <div class=\"users_button\">\n   <button @click=\"sortingByField('gender')\">Gender sorting by asc</button>\n-  &nbsp;\n+\n   <button @click=\"sortingByField('gender', 'desc')\">\n     Gender sorting by desc\n   </button>\n+  </div>\n \n+\n   <br />\n   <br />\n   <div class=\"users\">\n     <div class=\"users_item\" v-for=\"item in state.users\">\n"
+                },
+                {
+                    "date": 1667035265407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,13 @@\n <template>\n   <div class=\"users_button\">\n-  <button @click=\"sortingByField('gender')\">Gender sorting by asc</button>\n+    <button @click=\"sortingByField('gender')\">Gender sorting by asc</button>\n \n-  <button @click=\"sortingByField('gender', 'desc')\">\n-    Gender sorting by desc\n-  </button>\n+    <button @click=\"sortingByField('gender', 'desc')\">\n+      Gender sorting by desc\n+    </button>\n   </div>\n \n-\n   <br />\n   <br />\n   <div class=\"users\">\n     <div class=\"users_item\" v-for=\"item in state.users\">\n"
+                },
+                {
+                    "date": 1667035382255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,10 @@\n \n   <br />\n   <br />\n   <div class=\"users\">\n-    <div class=\"users_item\" v-for=\"item in state.users\">\n+    <div class=\"users_item\" v-for=\"(item, index) in state.users\">\n+      <div>{{index}}</div>\n       <div class=\"users_item-name\">{{ item.first_name }} {{ item.last_name }}</div>\n       <a class=\"users_item-email\" href=\"mailto:{{item.email}}\">email</a> \n       <div>{{ item.gender }}</div>\n       <!-- <br />\n"
+                },
+                {
+                    "date": 1667035401838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   <br />\n   <br />\n   <div class=\"users\">\n     <div class=\"users_item\" v-for=\"(item, index) in state.users\">\n-      <div>{{index}}</div>\n+      <div class=\"users_index\">{{index}}</div>\n       <div class=\"users_item-name\">{{ item.first_name }} {{ item.last_name }}</div>\n       <a class=\"users_item-email\" href=\"mailto:{{item.email}}\">email</a> \n       <div>{{ item.gender }}</div>\n       <!-- <br />\n"
+                },
+                {
+                    "date": 1667035542320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,18 +6,14 @@\n       Gender sorting by desc\n     </button>\n   </div>\n \n-  <br />\n-  <br />\n   <div class=\"users\">\n     <div class=\"users_item\" v-for=\"(item, index) in state.users\">\n       <div class=\"users_index\">{{index}}</div>\n       <div class=\"users_item-name\">{{ item.first_name }} {{ item.last_name }}</div>\n       <a class=\"users_item-email\" href=\"mailto:{{item.email}}\">email</a> \n       <div>{{ item.gender }}</div>\n-      <!-- <br />\n-      <br /> -->\n     </div>\n   </div>\n </template>\n \n"
+                }
+            ],
+            "date": 1667034461471,
+            "name": "Commit-0",
+            "content": "<template>\n  <button @click=\"sortingByField('gender')\">Gender sorting by asc</button>\n  &nbsp;\n  <button @click=\"sortingByField('gender', 'desc')\">\n    Gender sorting by desc\n  </button>\n\n  <br />\n  <br />\n  <div v-for=\"item in state.users\">\n    <strong>{{ item.first_name }} {{ item.last_name }}</strong> &nbsp;\n    <a href=\"mailto:{{item.email}}\">email</a> &nbsp;\n    <strong>{{ item.gender }}</strong>\n    <br />\n    <br />\n  </div>\n</template>\n\n<script setup>\nimport { reactive } from 'vue';\nimport { users } from '../service/getUsers';\n\nconst state = reactive({\n  users: [],\n});\n\nstate.users = users;\n\nfunction sortingByField(sortedField, sordetType) {\n  state.users = state.users.sort((a, b) => {\n    if (sordetType === 'desc') {\n      return a[sortedField] < b[sortedField] ? 1 : -1;\n    } else {\n      return a[sortedField] > b[sortedField] ? 1 : -1;\n    }\n  });\n}\n\nsortingByField('first_name');\n</script>\n"
+        }
+    ]
+}
